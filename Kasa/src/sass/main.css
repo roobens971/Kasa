@@ -40,7 +40,7 @@ nav a {
 
 .Banner_container .banner_img {
   padding: 45px;
-  height: 50vh;
+  height: 45vh;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -57,7 +57,35 @@ nav a {
   position: absolute;
   font-size: 40px;
   color: rgb(255, 255, 255);
-  top: 40%;
+  top: 37%;
   left: 50%;
   transform: translate(-50%, -50%);
+  filter: drop-shadow(2px 4px 6px rgb(0, 0, 0));
+}
+
+.container_box {
+  background-color: rgb(246, 246, 246);
+  width: 95%;
+  margin-left: 47px;
+  height: 100vh;
+  padding: 45px;
+  border-radius: 50px;
+}
+
+.DisplayCard {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 50px;
+}
+.DisplayCard .CardItem {
+  width: 60%;
+  height: 100%;
+  background-color: rgb(253, 91, 91);
+  border-radius: 10px;
+}
+.DisplayCard .CardInfo {
+  padding: 2px 16px;
 }/*# sourceMappingURL=main.css.map */

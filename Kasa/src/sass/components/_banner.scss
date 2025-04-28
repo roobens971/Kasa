@@ -2,7 +2,7 @@
 
     .banner_img {
         padding: 45px;
-        height: 50vh;
+        height: 45vh;
         width: 100%;
         background-position: center;
         background-repeat: no-repeat;
@@ -21,8 +21,9 @@
         position: absolute;
         font-size: 40px;
         color: $color-white;
-        top: 40%;
+        top: 37%;
         left: 50%;
         transform: translate(-50%, -50%);
+        filter: drop-shadow(2px 4px 6px $color-Black);
 }
 }

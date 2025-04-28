@@ -1,0 +1,19 @@
+.DisplayCard {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 50px;
+
+  .CardItem {
+    width: 60%;
+    height: 100%;
+    background-color: rgb(253, 91, 91);
+    border-radius: 10px;
+  }
+
+  .CardInfo {
+    padding: 2px 16px;
+  }
+}
