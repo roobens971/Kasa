@@ -1,0 +1,28 @@
+.Banner_container{
+
+    .banner_img {
+        padding: 45px;
+        height: 50vh;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        object-fit: cover;
+        border-radius: 70px;
+        filter: brightness(0.54);
+        
+    }
+
+    .banner_text h1{
+        font-weight: 700;
+        font-family: $font-primary;
+        text-align: center;
+        position: absolute;
+        font-size: 40px;
+        color: $color-white;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+}
