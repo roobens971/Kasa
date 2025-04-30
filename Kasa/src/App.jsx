@@ -1,23 +1,14 @@
-import Header from "./components/Header.jsx";
-import Banner from "./components/Banner.jsx";
-import LogementsBox from "./components/LogementsBox.jsx";
-import Footer from "./components/Footer.jsx";
-
-
-
+import { Routes, Route } from "react-router-dom";
+import Accueil from "./pages/Accueil";
+import Apropos from "./pages/Apropos";
 
 function App() {
   return (
-    <>
-    <div>
-      <Header/>
-      <Banner/>
-      <LogementsBox/>
-      <Footer/>
-    </div>
-    </>
+    <Routes>
+      <Route path="/" element={<Accueil />} />
+      <Route path="/Apropos" element={<Apropos />} />
+    </Routes>
   );
-  
 }
 
-export default App
+export default App;

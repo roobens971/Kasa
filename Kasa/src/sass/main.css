@@ -38,6 +38,11 @@ nav a {
   color: rgb(0, 0, 0);
 }
 
+.active,
+a {
+  text-decoration: underline;
+}
+
 .Banner_container .banner_img {
   padding: 45px;
   height: 45vh;
