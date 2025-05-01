@@ -1,4 +1,4 @@
-import LogementsItem from "./LogementsItem.jsx";
+import LogementsItem from "./Card.jsx";
 function LogementsContainer() {
   return (
     <>

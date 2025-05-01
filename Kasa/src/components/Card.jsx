@@ -1,4 +1,29 @@
-function LogementsItem() {
+// import logements from "../data";
+
+// import CardLogements from "../data";
+
+
+  /* <img src={logement.cover} /> */
+// function Card(props) {
+//   const items = (
+//     <div>
+//       {props.logements.map((logement.id) =>
+//       <img src={logement.cover} alt="" />
+//     )}
+//     </div>
+//   )
+// }
+
+// const Carditems = logements.map((logement) => (
+//   <>
+//     <div>
+//       <Card key={logements.id} logement={logement} />
+//       <img src={logement.cover} />
+//     </div>
+//   </>
+// ));
+
+function Card() {
   return (
     <div className="DisplayCard">
       {/* Appartement cosy */}
@@ -164,4 +189,4 @@ function LogementsItem() {
   );
 }
 
-export default LogementsItem;
+  export default Card;
