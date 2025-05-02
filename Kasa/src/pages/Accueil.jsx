@@ -1,7 +1,7 @@
 import Header from "../components/Header.jsx";
 import Banner from "../components/Banner.jsx";
 import bannerImage from "/src/assets/img-logo/IMG.png";
-import LogementsBox from "../components/LogementsBox.jsx";
+import ContainerGray from "../components/ContainerGray.jsx";
 import Footer from "../components/Footer.jsx";
 
 function Accueil() {
@@ -11,7 +11,7 @@ function Accueil() {
       <div>
         <Banner image={bannerImage} text="Chez vous, partout et ailleurs" />
       </div>
-      <LogementsBox />
+      <ContainerGray />
       <Footer />
     </>
   );

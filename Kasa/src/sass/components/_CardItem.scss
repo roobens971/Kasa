@@ -1,19 +1,27 @@
 .DisplayCard {
-  height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  justify-items: center;
-  gap: 50px;
+  margin-left: 70px;
 
-  .CardItem {
-    width: 60%;
-    height: 100%;
-    background-color: rgb(253, 91, 91);
+  .CardPictures {
+    width: 80%;
+    height: 80%;
     border-radius: 10px;
+    filter: brightness(0.90);
   }
 
-  .CardInfo {
-    padding: 2px 16px;
+  .textTitle {
+    color: $color-white;
+    position: relative;
+    left: 20px;
+    bottom: 70px;
+    font-size: 18px;
+    font-weight: 700;
+    width: 50%;
+    line-height: 30px;
   }
+
+  // .CardInfo {
+  //   padding: 2px 16px;
+  // }
 }
