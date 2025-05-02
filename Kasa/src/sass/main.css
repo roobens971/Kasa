@@ -70,30 +70,32 @@ a {
 
 .container_box {
   background-color: rgb(246, 246, 246);
-  color: rgb(255, 255, 255);
   width: 95%;
   margin-left: 47px;
-  height: 100vh;
   padding: 45px;
   border-radius: 50px;
 }
 
 .DisplayCard {
-  height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  justify-items: center;
-  gap: 50px;
+  margin-left: 70px;
 }
-.DisplayCard .CardItem {
-  width: 60%;
-  height: 100%;
-  background-color: rgb(253, 91, 91);
+.DisplayCard .CardPictures {
+  width: 80%;
+  height: 80%;
   border-radius: 10px;
+  filter: brightness(0.9);
 }
-.DisplayCard .CardInfo {
-  padding: 2px 16px;
+.DisplayCard .textTitle {
+  color: rgb(255, 255, 255);
+  position: relative;
+  left: 20px;
+  bottom: 70px;
+  font-size: 18px;
+  font-weight: 700;
+  width: 50%;
+  line-height: 30px;
 }
 
 footer {
