@@ -3,6 +3,16 @@
 body {
   background-color: rgb(255, 255, 255);
   font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .img_logo {
@@ -72,7 +82,7 @@ a {
   background-color: rgb(246, 246, 246);
   width: 95%;
   margin-left: 47px;
-  padding: 45px;
+  padding: 50px 0px 0px 45px;
   border-radius: 50px;
 }
 
@@ -131,8 +141,50 @@ footer p {
   font-size: 18px;
   font-weight: 500;
   color: rgb(0, 0, 0);
-  margin-bottom: 71px;
+  margin-bottom: 85.5px;
 }
 .errorFlex .errorImage {
   width: 30%;
+}
+
+.slides {
+  border-radius: 50px;
+  margin-left: 50px;
+  margin-right: 30px;
+}
+.slides .ArrowIcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  top: 370px;
+  position: relative;
+  margin: 20px;
+}
+.slides .Icon {
+  font-size: 70px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.6s ease;
+}
+
+.Icon:hover {
+  background-color: rgba(148, 138, 138, 0.8);
+}
+
+.slidesNumbers {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.slidesNumbers .number {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.imgSlides {
+  border-radius: 50px;
+  width: 100%;
+  height: 700px;
 }/*# sourceMappingURL=main.css.map */

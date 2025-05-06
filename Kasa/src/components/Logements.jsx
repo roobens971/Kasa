@@ -5,10 +5,10 @@ function Logements() {
   return (
     <div className="DisplayCard">
         {logements.map((logement) => (
-          <Card key={logement.id} title={logement.title} img={logement.cover} />
+          <Card key={logement.id} id={logement.id} title={logement.title} img={logement.cover} />
         ))}
     </div>
   );
-}
+}   
 
 export default Logements;
