@@ -1,10 +1,10 @@
 import data from "../data.js";
 import Card from "./Card.jsx";
 function Logements() {
-  const logements = data;
+  
   return (
     <div className="DisplayCard">
-        {logements.map((logement) => (
+        {data.map((logement) => (
           <Card key={logement.id} id={logement.id} title={logement.title} img={logement.cover} />
         ))}
     </div>

@@ -4,6 +4,7 @@ import Slideshow from "../components/Slideshow.jsx";
 import data from "../data.js";
 import ErrorPage from "../pages/ErrorPage.jsx";
 import MainContainer from "../layout/MainContainer.jsx";
+import HostInfos from "../components/HostInfos.jsx";
 
 function InfoLogement() {
   const { id } = useParams(); // 1. Récupérer l'ID de l'URL
@@ -18,6 +19,14 @@ function InfoLogement() {
       <MainContainer>
         <Header />
         <Slideshow pictures={logement.pictures} />
+        <HostInfos
+          title={logement.title}
+          location={logement.location}
+          name={logement.host.name}
+          picture={logement.host.picture}
+          tags={logement.tags}
+          rating={logement.rating}
+        />
       </MainContainer>
     </>
   );
