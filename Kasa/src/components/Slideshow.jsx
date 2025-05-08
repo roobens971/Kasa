@@ -4,18 +4,22 @@ import {
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
-// import data from "../data.js";
+
 
 function Slideshow({ pictures }) {
   let [latestSlides, setLatestSlide] = useState(0);
   const finalSlides = pictures.length;
 
+// Si on est à la première image, on revient à la dernière (boucle).
+// Sinon, on recule de 1.
   const slideLeft = () => {
     setLatestSlide((prevIndex) =>
       prevIndex === 0 ? pictures.length - 1 : prevIndex - 1
     );
   };
 
+// Si on est à la dernière image, on revient à la première.
+// Sinon, on avance de 1.
   const slideRight = () => {
     setLatestSlide((prevIndex) =>
       prevIndex === pictures.length - 1 ? 0 : prevIndex + 1

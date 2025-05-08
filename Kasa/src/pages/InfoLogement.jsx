@@ -5,6 +5,7 @@ import data from "../data.js";
 import ErrorPage from "../pages/ErrorPage.jsx";
 import MainContainer from "../layout/MainContainer.jsx";
 import HostInfos from "../components/HostInfos.jsx";
+import Footer from "../components/Footer.jsx"
 
 function InfoLogement() {
   const { id } = useParams(); // 1. Récupérer l'ID de l'URL
@@ -15,7 +16,7 @@ function InfoLogement() {
   }
 
   return (
-    <>
+    
       <MainContainer>
         <Header />
         <Slideshow pictures={logement.pictures} />
@@ -27,8 +28,9 @@ function InfoLogement() {
           tags={logement.tags}
           rating={logement.rating}
         />
+         <Footer/>
       </MainContainer>
-    </>
+  
   );
 }
 
