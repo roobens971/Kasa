@@ -9,7 +9,7 @@ const LogementCollapse = ({ description, equipments }) => {
       </Collapse>
 
       {equipments && Array.isArray(equipments) && (
-        <Collapse title="Équipements">
+        <Collapse title="Équipments">
           <ul>
             {equipments.map((item, index) => (
               <li key={index}>{item}</li>

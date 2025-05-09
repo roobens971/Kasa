@@ -1,7 +1,8 @@
 @import "./base/fonts";
 @import "./abstracts/variables";
 @import "./base/minireset";
-@import "./pages/global";
+@import "./abstracts/body";
+@import "./abstracts/mixins";
 
 @import "./layout/header";
 @import "./components/banner";

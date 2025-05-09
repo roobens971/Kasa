@@ -39,3 +39,15 @@ nav {
 a {
   text-decoration: underline;
 }
+
+
+@include mobile {
+  .header_box {
+   width: 445px;
+  }
+
+ a{
+  text-transform: uppercase;
+ }
+  
+}
