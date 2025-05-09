@@ -1,0 +1,35 @@
+.collapse-container {
+  padding: 0px 100px;
+  width: 100%;
+  margin: 20px 0px;
+  overflow: hidden;
+
+  .titre-accordion {
+    display: flex;
+    background-color: $color-light-pink;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    border-radius: 7px;
+    padding: 20px;
+    cursor: pointer;
+    color: $color-white;
+    font-size: 24px;
+  }
+
+  h3 {
+    font-weight: 700;
+  }
+  .description {
+    background-color: $color-grey-container;
+    padding: 15px 20px;
+    border-radius: 0px 0px 7px 7px;
+    font-size: 18px;
+  }
+}
+
+.logement-collapse {
+  display: flex;
+  margin: 0px -40px;
+}

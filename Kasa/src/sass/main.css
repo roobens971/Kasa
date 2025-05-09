@@ -249,4 +249,38 @@ footer p {
   display: flex;
   font-size: 25px;
   gap: 10px;
+}
+
+.collapse-container {
+  padding: 0px 100px;
+  width: 100%;
+  margin: 20px 0px;
+  overflow: hidden;
+}
+.collapse-container .titre-accordion {
+  display: flex;
+  background-color: rgb(255, 96, 96);
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  border-radius: 7px;
+  padding: 20px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+}
+.collapse-container h3 {
+  font-weight: 700;
+}
+.collapse-container .description {
+  background-color: rgb(246, 246, 246);
+  padding: 15px 20px;
+  border-radius: 0px 0px 7px 7px;
+  font-size: 18px;
+}
+
+.logement-collapse {
+  display: flex;
+  margin: 0px -40px;
 }/*# sourceMappingURL=main.css.map */

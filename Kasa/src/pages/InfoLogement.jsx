@@ -5,9 +5,11 @@ import data from "../data.js";
 import ErrorPage from "../pages/ErrorPage.jsx";
 import MainContainer from "../layout/MainContainer.jsx";
 import HostInfos from "../components/HostInfos.jsx";
-import Footer from "../components/Footer.jsx"
+import Footer from "../components/Footer.jsx";
+import Collapse from "../components/Collapse.jsx";
+import LogementCollapse from "../components/LogementCollapse";
 
-function InfoLogement() {
+const InfoLogement = () => {
   const { id } = useParams(); // 1. Récupérer l'ID de l'URL
   const logement = data.find((item) => item.id === id); // 2. Chercher le logement
 
@@ -16,22 +18,25 @@ function InfoLogement() {
   }
 
   return (
-    
-      <MainContainer>
-        <Header />
-        <Slideshow pictures={logement.pictures} />
-        <HostInfos
-          title={logement.title}
-          location={logement.location}
-          name={logement.host.name}
-          picture={logement.host.picture}
-          tags={logement.tags}
-          rating={logement.rating}
-        />
-         <Footer/>
-      </MainContainer>
-  
+    <MainContainer>
+      <Header />
+      <Slideshow pictures={logement.pictures} />
+      <HostInfos
+        title={logement.title}
+        location={logement.location}
+        name={logement.host.name}
+        picture={logement.host.picture}
+        tags={logement.tags}
+        rating={logement.rating}
+      />
+      <LogementCollapse
+        description={logement.description}
+        equipments={logement.equipments}
+      />
+
+      <Footer />
+    </MainContainer>
   );
-}
+};
 
 export default InfoLogement;

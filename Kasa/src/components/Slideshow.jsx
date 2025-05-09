@@ -7,13 +7,13 @@ import {
 
 
 function Slideshow({ pictures }) {
-  let [latestSlides, setLatestSlide] = useState(0);
+  let [activeSlide, setActiveSlide] = useState(0);
   const finalSlides = pictures.length;
 
 // Si on est à la première image, on revient à la dernière (boucle).
 // Sinon, on recule de 1.
   const slideLeft = () => {
-    setLatestSlide((prevIndex) =>
+    setActiveSlide((prevIndex) =>
       prevIndex === 0 ? pictures.length - 1 : prevIndex - 1
     );
   };
@@ -21,7 +21,7 @@ function Slideshow({ pictures }) {
 // Si on est à la dernière image, on revient à la première.
 // Sinon, on avance de 1.
   const slideRight = () => {
-    setLatestSlide((prevIndex) =>
+    setActiveSlide((prevIndex) =>
       prevIndex === pictures.length - 1 ? 0 : prevIndex + 1
     );
   };
@@ -44,14 +44,14 @@ function Slideshow({ pictures }) {
       )}
       <div className="slidesNumbers">
         <span className="number">
-          {latestSlides + 1}/{finalSlides}
+          {activeSlide + 1}/{finalSlides}
         </span>
       </div>
       <div className="slideshow">
         <img
           className="imgSlides"
-          src={pictures[latestSlides]}
-          alt={`Photo ${latestSlides + 1}`}
+          src={pictures[activeSlide]}
+          alt={`Photo ${activeSlide + 1}`}
         />
       </div>
     </div>
