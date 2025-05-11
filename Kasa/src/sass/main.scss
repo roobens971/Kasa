@@ -1,9 +1,9 @@
 @import "./base/fonts";
 @import "./abstracts/variables";
 @import "./base/minireset";
-@import "./abstracts/body";
-@import "./abstracts/mixins";
 
+@import "./abstracts/mixins";
+@import "./abstracts/body";
 @import "./layout/header";
 @import "./components/banner";
 @import "./components/ContainerGray";

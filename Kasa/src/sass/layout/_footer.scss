@@ -16,3 +16,18 @@ footer {
     color: $color-white;
   }
 }
+
+@include mobile {
+  footer {
+    height: 210px;
+    width: 108%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     img {
+    margin-top: 50px;
+  }
+  }
+
+ 
+}

@@ -33,3 +33,17 @@
   display: flex;
   margin: 0px -40px;
 }
+
+@include mobile {
+  .collapse-container {
+ margin-left: -70px;
+ margin-top: 0px;
+  width: 140%;
+
+}
+
+.container-accordeon {
+  margin-top: -20px;
+}
+
+}

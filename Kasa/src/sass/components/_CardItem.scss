@@ -7,7 +7,7 @@
     width: 80%;
     height: 80%;
     border-radius: 10px;
-    filter: brightness(0.90);
+    filter: brightness(0.9);
   }
 
   .textTitle {
@@ -24,4 +24,28 @@
   // .CardInfo {
   //   padding: 2px 16px;
   // }
+}
+
+@include mobile {
+  .DisplayCard {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    // width: 145%;
+    margin-top: -20px;
+
+      .CardPictures {
+    width: 93%;
+    margin-left: -20px;
+    border-radius: 10px;
+    filter: brightness(0.9);
+  }
+    
+    .textTitle {
+      // font-size: 25px;
+      // width: 70%;
+       bottom: 85px;
+       line-height: 40px
+    }
+  }
 }

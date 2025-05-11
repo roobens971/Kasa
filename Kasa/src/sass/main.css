@@ -51,14 +51,19 @@ nav a {
 .active,
 a {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 375px) {
-  .header_box {
-    width: 445px;
+  header {
+    padding: 1px 0px 0px 0px;
+  }
+  .img_logo {
+    width: 125px;
   }
   a {
     text-transform: uppercase;
+    font-size: 14px;
   }
 }
 .banner_img {
@@ -88,7 +93,6 @@ a {
 
 @media screen and (max-width: 375px) {
   .Banner_container {
-    width: 510px;
     margin-top: -40px;
   }
   .Banner_container .banner_img {
@@ -110,6 +114,12 @@ a {
   border-radius: 50px;
 }
 
+@media screen and (max-width: 375px) {
+  .container_box {
+    background: none;
+    padding: 0px;
+  }
+}
 .DisplayCard {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -132,6 +142,18 @@ a {
   line-height: 30px;
 }
 
+@media screen and (max-width: 375px) {
+  .DisplayCard {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-top: -20px;
+  }
+  .DisplayCard .textTitle {
+    bottom: 85px;
+    line-height: 40px;
+  }
+}
 footer {
   background-color: rgb(0, 0, 0);
   display: flex;
@@ -149,6 +171,11 @@ footer p {
   color: rgb(255, 255, 255);
 }
 
+@media screen and (max-width: 375px) {
+  footer {
+    margin-top: -20px;
+  }
+}
 .errorFlex {
   display: flex;
   flex-direction: column;
