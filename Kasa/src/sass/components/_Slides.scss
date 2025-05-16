@@ -42,3 +42,41 @@
   height: 550px;
   object-fit: cover;
 }
+
+@include mobile {
+  .slides {
+    .ArrowIcon {
+      top: 100px;
+      margin-left: -20px;
+      margin-right: -5px;
+    }
+    .Icon {
+      font-size: 30px;
+      color: $color-white;
+      cursor: pointer;
+      transition: 0.6s ease;
+    }
+  }
+  .imgSlides {
+    height: 290px;
+    margin-top: -70px;
+
+    width: 350px;
+    border-radius: 10px;
+  }
+
+  .slideshow {
+    width: 113%;
+    margin-left: -27px;
+  }
+
+  .slidesNumbers {
+    top: 57%;
+
+    .number {
+      font-size: 20px;
+      display: none;
+    }
+
+  }
+}

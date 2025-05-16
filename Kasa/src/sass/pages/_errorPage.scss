@@ -20,3 +20,23 @@
     width: 30%;
   }
 }
+
+
+@include mobile {
+  .errorFlex {
+  .oupsText {
+    color: $color-light-pink;
+    font-size: 18px;
+   text-align: center;
+  }
+  .errorImage {
+    width: 50%;
+  }
+
+    p, a {
+   
+  font-size: 15px;
+  }
+  }
+
+}

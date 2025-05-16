@@ -4,7 +4,7 @@ function HostInfos({ title, location, name, picture, rating, tags }) {
   return (
     <>
       <div className="infos">
-        <div>
+        <div className="title_location">
           <h1>{title}</h1>
           <p>{location}</p>
         </div>

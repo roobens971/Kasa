@@ -10,7 +10,7 @@ function Slideshow({ pictures }) {
   let [activeSlide, setActiveSlide] = useState(0);
   const finalSlides = pictures.length;
 
-// Si on est à la première image, on revient à la dernière (boucle).
+// Si on est à la première image, on revient à la dernière image (boucle infini).
 // Sinon, on recule de 1.
   const slideLeft = () => {
     setActiveSlide((prevIndex) =>
@@ -18,7 +18,7 @@ function Slideshow({ pictures }) {
     );
   };
 
-// Si on est à la dernière image, on revient à la première.
+// Si on est à la dernière image, on revient à la première image.
 // Sinon, on avance de 1.
   const slideRight = () => {
     setActiveSlide((prevIndex) =>
