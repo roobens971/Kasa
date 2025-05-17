@@ -71,11 +71,8 @@ a {
 }
 .banner_img {
   padding: 45px;
-  height: 45vh;
+  height: 60vh;
   width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
   object-fit: cover;
   border-radius: 70px;
@@ -88,7 +85,7 @@ a {
   position: absolute;
   font-size: 40px;
   color: rgb(255, 255, 255);
-  top: 37%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   filter: drop-shadow(2px 4px 6px rgb(0, 0, 0));
