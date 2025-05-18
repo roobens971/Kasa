@@ -8,7 +8,6 @@ import MainContainer from "../layout/MainContainer.jsx";
 function Apropos() {
   return (
     <MainContainer>
-      <Header />
       <Banner image={bannerImage} />
       <div className="container-accordeon">
         <Collapse title="Fiabilité">
@@ -47,8 +46,6 @@ function Apropos() {
           </p>
         </Collapse>
       </div>
-
-      <Footer />
     </MainContainer>
   );
 }

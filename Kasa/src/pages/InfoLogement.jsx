@@ -1,11 +1,9 @@
 import { useParams } from "react-router-dom";
-import Header from "../components/Header.jsx";
 import Slideshow from "../components/Slideshow.jsx";
 import data from "../data.js";
 import ErrorPage from "../pages/ErrorPage.jsx";
 import MainContainer from "../layout/MainContainer.jsx";
 import HostInfos from "../components/HostInfos.jsx";
-import Footer from "../components/Footer.jsx";
 import Collapse from "../components/Collapse.jsx";
 import LogementCollapse from "../components/LogementCollapse";
 
@@ -19,7 +17,6 @@ const InfoLogement = () => {
 
   return (
     <MainContainer>
-      <Header />
       <Slideshow pictures={logement.pictures} />
       <HostInfos
         title={logement.title}
@@ -33,8 +30,6 @@ const InfoLogement = () => {
         description={logement.description}
         equipments={logement.equipments}
       />
-
-      <Footer />
     </MainContainer>
   );
 };

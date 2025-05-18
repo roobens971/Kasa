@@ -8,7 +8,6 @@ function ErrorPage() {
   return (
     <>
       <MainContainer>
-        <Header />
         <div className="errorFlex">
           <img className="errorImage" src={ErrorLogo} alt="Error_Logo" />
           <p className="oupsText">
@@ -18,7 +17,6 @@ function ErrorPage() {
             <Link to="/">Retourner sur la page d’accueil</Link>
           </p>
         </div>
-        <Footer />
       </MainContainer>
     </>
   );
