@@ -17,13 +17,9 @@
     bottom: 70px;
     font-size: 18px;
     font-weight: 700;
-    width: 50%;
+    width: 57%;
     line-height: 30px;
   }
-
-  // .CardInfo {
-  //   padding: 2px 16px;
-  // }
 }
 
 @include mobile {
@@ -31,21 +27,20 @@
     display: flex;
     flex-direction: column;
     margin-left: 0px;
-    // width: 145%;
     margin-top: -20px;
 
-      .CardPictures {
-    width: 93%;
-    margin-left: -20px;
-    border-radius: 10px;
-    filter: brightness(0.9);
-  }
-    
+    .CardPictures {
+      width: 93%;
+      margin-left: -20px;
+      border-radius: 10px;
+      filter: brightness(0.9);
+    }
+
     .textTitle {
-      // font-size: 25px;
-      // width: 70%;
-       bottom: 85px;
-       line-height: 40px
+      width: 80%;
+      left: 0px;
+      bottom: 85px;
+      line-height: 40px;
     }
   }
 }

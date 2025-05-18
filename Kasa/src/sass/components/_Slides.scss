@@ -2,6 +2,7 @@
   border-radius: 50px;
   margin-left: 50px;
   margin-right: 30px;
+  position: relative;
 
   .ArrowIcon {
     display: flex;
@@ -25,7 +26,7 @@
 
 .slidesNumbers {
   position: absolute;
-  top: 72%;
+  top: 95%;
   left: 50%;
   transform: translate(-50%, -50%);
 

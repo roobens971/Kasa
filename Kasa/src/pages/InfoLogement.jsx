@@ -10,11 +10,11 @@ import Collapse from "../components/Collapse.jsx";
 import LogementCollapse from "../components/LogementCollapse";
 
 const InfoLogement = () => {
-  const { id } = useParams(); // 1. Récupérer l'ID de l'URL
-  const logement = data.find((item) => item.id === id); // 2. Chercher le logement
+  const { id } = useParams(); 
+  const logement = data.find((item) => item.id === id); 
 
   if (!logement) {
-    return <ErrorPage />; // Gérer le cas où l'ID est invalide
+    return <ErrorPage />; 
   }
 
   return (
