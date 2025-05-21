@@ -23,11 +23,7 @@ const router = createBrowserRouter([
     path: "/logement/:id",
     element: <InfoLogement/>,
   }
-],
-
-  {
-    basename: "/Kasa", // ← nom exact de ton dépôt GitHub
-  });
+]);
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
