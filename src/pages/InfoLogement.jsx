@@ -4,7 +4,6 @@ import data from "../data.js";
 import ErrorPage from "../pages/ErrorPage.jsx";
 import HostInfos from "../components/HostInfos.jsx";
 import Collapse from "../components/Collapse.jsx";
-import LogementCollapse from "../components/LogementCollapse";
 
 const InfoLogement = () => {
   const { id } = useParams();
@@ -25,10 +24,24 @@ const InfoLogement = () => {
         tags={logement.tags}
         rating={logement.rating}
       />
-      <LogementCollapse
-        description={logement.description}
-        equipments={logement.equipments}
-      />
+
+
+      {/* Collapse pour Description et Équipements */}
+      <div className="logement-collapse">
+        <Collapse title="Description" variant="logement">
+          <p>{logement.description}</p>
+        </Collapse>
+
+        {logement.equipments && Array.isArray(logement.equipments) && (
+          <Collapse title="Équipements" variant="logement">
+            <ul>
+              {logement.equipments.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </Collapse>
+        )}
+      </div>
     </>
   );
 };
