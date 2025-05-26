@@ -1,3 +1,11 @@
+.LogementsContainer {
+  background-color: $color-grey-container;
+  width: 95%;
+  margin-left: 47px;
+  padding: 50px 0px 0px 45px;
+  border-radius: 50px;
+}
+
 .DisplayCard {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -23,6 +31,11 @@
 }
 
 @include mobile {
+  .LogementContainer {
+    background: none;
+    padding: 0px;
+  }
+
   .DisplayCard {
     display: flex;
     flex-direction: column;

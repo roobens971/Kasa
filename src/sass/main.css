@@ -121,7 +121,7 @@ a {
     text-align: left;
   }
 }
-.container_box {
+.LogementsContainer {
   background-color: rgb(246, 246, 246);
   width: 95%;
   margin-left: 47px;
@@ -129,12 +129,6 @@ a {
   border-radius: 50px;
 }
 
-@media screen and (max-width: 375px) {
-  .container_box {
-    background: none;
-    padding: 0px;
-  }
-}
 .DisplayCard {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -158,6 +152,10 @@ a {
 }
 
 @media screen and (max-width: 375px) {
+  .LogementContainer {
+    background: none;
+    padding: 0px;
+  }
   .DisplayCard {
     display: flex;
     flex-direction: column;
