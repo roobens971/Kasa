@@ -152,7 +152,7 @@ a {
 }
 
 @media screen and (max-width: 375px) {
-  .LogementContainer {
+  .LogementsContainer {
     background: none;
     padding: 0px;
   }
@@ -249,9 +249,13 @@ footer p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  top: 370px;
-  position: relative;
-  margin: 20px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  padding: 0 20px;
+  z-index: 10;
 }
 .slides .Icon {
   font-size: 70px;
@@ -284,10 +288,19 @@ footer p {
 }
 
 @media screen and (max-width: 375px) {
+  .slides {
+    position: relative;
+  }
   .slides .ArrowIcon {
-    top: 100px;
-    margin-left: -20px;
-    margin-right: -5px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    z-index: 2;
   }
   .slides .Icon {
     font-size: 30px;
@@ -297,13 +310,13 @@ footer p {
   }
   .imgSlides {
     height: 290px;
-    margin-top: -70px;
+    margin-top: 0;
     width: 350px;
     border-radius: 10px;
   }
   .slideshow {
     width: 113%;
-    margin-left: -27px;
+    margin-left: -20px;
   }
   .slidesNumbers {
     top: 57%;
@@ -460,7 +473,6 @@ footer p {
   padding: 15px 20px;
   border-radius: 0px 0px 7px 7px;
   font-size: 18px;
-  min-height: 150px;
 }
 
 .logement-collapse {
@@ -468,6 +480,9 @@ footer p {
   margin: 0px -40px;
   justify-content: space-between;
   gap: 40px;
+}
+.logement-collapse .text-infos {
+  min-height: 175px;
 }
 
 @media screen and (max-width: 375px) {

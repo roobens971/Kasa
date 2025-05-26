@@ -26,15 +26,20 @@
     padding: 15px 20px;
     border-radius: 0px 0px 7px 7px;
     font-size: 18px;
-    min-height: 150px; // 🔸 fixe une hauteur minimale
   }
 }
+
+
 
 .logement-collapse {
   display: flex;
   margin: 0px -40px;
   justify-content: space-between;
   gap: 40px;
+
+  .text-infos {
+  min-height: 175px; // 🔸 fixe une hauteur minimale
+}
 }
 
 @include mobile {

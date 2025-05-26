@@ -29,12 +29,12 @@ const InfoLogement = () => {
       {/* Collapse pour Description et Équipements */}
       <div className="logement-collapse">
         <Collapse title="Description" variant="logement">
-          <p>{logement.description}</p>
+          <p className="text-infos">{logement.description}</p>
         </Collapse>
 
         {logement.equipments && Array.isArray(logement.equipments) && (
           <Collapse title="Équipements" variant="logement">
-            <ul>
+            <ul className="text-infos">
               {logement.equipments.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
