@@ -1,5 +1,8 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
 footer {
-  background-color: $color-Black;
+  background-color: variables.$color-Black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,11 +16,11 @@ footer {
   }
 
   p {
-    color: $color-white;
+    color: variables.$color-white;
   }
 }
 
-@include mobile {
+@include mixins.mobile {
   footer {
     height: 240px;
     width: 108%;

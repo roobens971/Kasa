@@ -1,3 +1,6 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
 .collapse-container {
   padding: 0px 100px;
   width: 100%;
@@ -6,7 +9,7 @@
 
   .titre-accordion {
     display: flex;
-    background-color: $color-light-pink;
+    background-color: variables.$color-light-pink;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -14,7 +17,7 @@
     border-radius: 7px;
     padding: 20px;
     cursor: pointer;
-    color: $color-white;
+    color: variables.$color-white;
     font-size: 24px;
     border: none;
     width: 100%;
@@ -24,7 +27,7 @@
     font-weight: 700;
   }
   .description {
-    background-color: $color-grey-container;
+    background-color: variables.$color-grey-container;
     padding: 15px 20px;
     border-radius: 0px 0px 7px 7px;
     font-size: 18px;
@@ -38,11 +41,11 @@
   gap: 40px;
 
   .text-infos {
-  min-height: 175px; // 🔸 fixe une hauteur minimale
+  min-height: 175px;
 }
 }
 
-@include mobile {
+@include mixins.mobile {
   .collapse-container {
     .titre-accordion {
       font-size: 13px;
@@ -52,7 +55,6 @@
 
   .collapse-container {
     margin-left: -70px;
-    // margin-top: 0px;
     width: 140%;
     margin-bottom: -5px;
   }

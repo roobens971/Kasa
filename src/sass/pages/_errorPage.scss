@@ -1,3 +1,6 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
 .errorFlex {
   display: flex;
   flex-direction: column;
@@ -5,7 +8,7 @@
   gap: 100px;
   margin-top: 70px;
   .oupsText {
-    color: $color-light-pink;
+    color: variables.$color-light-pink;
     font-size: 36px;
     font-weight: 500;
   }
@@ -13,7 +16,7 @@
   p, a {
     font-size: 18px;
     font-weight: 500;
-    color: $color-Black;
+    color: variables.$color-Black;
     margin-bottom: 85.5px;
   }
   .errorImage {
@@ -22,10 +25,10 @@
 }
 
 
-@include mobile {
+@include mixins.mobile {
   .errorFlex {
   .oupsText {
-    color: $color-light-pink;
+    color: variables.$color-light-pink;
     font-size: 18px;
    text-align: center;
   }

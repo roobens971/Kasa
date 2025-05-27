@@ -1,17 +1,17 @@
-@import "./base/fonts";
-@import "./abstracts/variables";
-@import "./base/minireset";
+@use "./base/fonts";
+@use "./abstracts/variables";
+@use "./base/minireset";
 
-@import "./abstracts/mixins";
-@import "./abstracts/body";
-@import "./layout/header";
-@import "./components/banner";
-@import "./components/Logements";
-@import "./layout/footer";
+@use "./abstracts/mixins";
+@use "./abstracts/body";
+@use "./layout/header";
+@use "./components/banner";
+@use "./components/Logements";
+@use "./layout/footer";
 
 
-@import "./pages/errorPage";
-@import "./components/Slides";
-@import "./components/HostInfos";
-@import "./layout/collapse";
-@import "./layout/main-container";
+@use "./pages/errorPage";
+@use "./components/Slides";
+@use "./components/HostInfos";
+@use "./layout/collapse";
+@use "./layout/main-container";

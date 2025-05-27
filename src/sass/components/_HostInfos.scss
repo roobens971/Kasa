@@ -1,3 +1,6 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
 .infos {
   display: flex;
   flex-direction: row;
@@ -15,7 +18,7 @@
   h1 {
     font-weight: 500;
     font-size: 36px;
-    color: $color-light-pink;
+    color: variables.$color-light-pink;
     line-height: 50px;
   }
 
@@ -28,7 +31,7 @@
     font-weight: 500;
     font-size: 18px;
     width: 30%;
-    color: $color-light-pink;
+    color: variables.$color-light-pink;
   }
   .imgHost {
     border-radius: 70px;
@@ -52,8 +55,8 @@
     font-size: 14px;
     padding: 3px 30px;
     border-radius: 10px;
-    color: $color-white;
-    background-color: $color-light-pink;
+    color: variables.$color-white;
+    background-color: variables.$color-light-pink;
   }
 }
 
@@ -63,7 +66,7 @@
   gap: 10px;
 }
 
-@include mobile {
+@include mixins.mobile {
   .infos {
     display: flex;
     flex-direction: column;
@@ -90,7 +93,7 @@
       font-weight: 500;
       font-size: 15px;
       width: 30%;
-      color: $color-light-pink;
+      color: variables.$color-light-pink;
     }
     .imgHost {
       border-radius: 70px;
@@ -103,7 +106,7 @@
   }
 }
 
-@include mobile {
+@include mixins.mobile {
   .rating_tags {
     display: flex;
     flex-direction: column;

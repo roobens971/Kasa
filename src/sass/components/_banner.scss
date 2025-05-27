@@ -1,3 +1,6 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
 .Banner_container {
     position: relative;
   width: 100%;
@@ -25,10 +28,10 @@
 
   h1{
       font-size: 40px;
-    font-family: $font-primary;
+    font-family: variables.$font-primary;
     font-weight: 700;
-    color: $color-white;
-    filter: drop-shadow(2px 4px 6px $color-Black);
+    color: variables.$color-white;
+    filter: drop-shadow(2px 4px 6px variables.$color-Black);
     text-align: center;
   }
 }
@@ -36,7 +39,7 @@
 
 
 
-@include mobile {
+@include mixins.mobile {
   .Banner_container {
     margin-top: -40px;
     width: 113%;

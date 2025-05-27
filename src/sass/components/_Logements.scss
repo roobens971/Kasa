@@ -1,5 +1,8 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
 .LogementsContainer {
-  background-color: $color-grey-container;
+  background-color: variables.$color-grey-container;
   width: 95%;
   margin-left: 47px;
   padding: 50px 0px 0px 45px;
@@ -19,7 +22,7 @@
   }
 
   .textTitle {
-    color: $color-white;
+    color: variables.$color-white;
     position: relative;
     left: 20px;
     bottom: 70px;
@@ -30,7 +33,7 @@
   }
 }
 
-@include mobile {
+@include mixins.mobile {
   .LogementsContainer {
     background: none;
     padding: 0px;

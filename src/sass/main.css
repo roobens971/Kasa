@@ -350,7 +350,7 @@ footer p {
   font-weight: 500;
   font-size: 18px;
 }
-.infos h3 {
+.infos .host-name {
   font-weight: 500;
   font-size: 18px;
   width: 30%;
@@ -464,8 +464,10 @@ footer p {
   cursor: pointer;
   color: rgb(255, 255, 255);
   font-size: 24px;
+  border: none;
+  width: 100%;
 }
-.collapse-container h3 {
+.collapse-container span {
   font-weight: 700;
 }
 .collapse-container .description {

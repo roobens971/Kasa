@@ -1,3 +1,6 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
 .img_logo {
   width: 150px;
   margin-left: 25px;
@@ -30,9 +33,9 @@ nav {
     display: block;
     padding: 12px 20px;
     text-decoration: none;
-    font-family: $font-primary;
+    font-family: variables.$font-primary;
     font-weight: 500;
-    color: $color-Black;
+    color: variables.$color-Black;
   }
 }
 
@@ -43,21 +46,16 @@ a {
 }
 
 
-@include mobile {
+@include mixins.mobile {
 header {
-  // margin-top: 15px;
   padding: 1px 0px 0px 0px;
-  // padding: 0px;
 }
-
 
 .img_logo {
   width: 125px;
 }
 
-
  a{
- 
   font-size: 14px;
  }
 

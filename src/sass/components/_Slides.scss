@@ -1,3 +1,6 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
 .slides {
   border-radius: 50px;
   margin-left: 50px;
@@ -18,7 +21,7 @@
   }
   .Icon {
     font-size: 70px;
-    color: $color-white;
+    color: variables.$color-white;
     cursor: pointer;
     transition: 0.6s ease;
   }
@@ -35,7 +38,7 @@
   transform: translate(-50%, -50%);
 
   .number {
-    color: $color-white;
+    color: variables.$color-white;
     font-size: 25px;
     font-weight: 700;
   }
@@ -48,7 +51,7 @@
   object-fit: cover;
 }
 
-@include mobile {
+@include mixins.mobile {
   .slides {
     position: relative;
     .ArrowIcon {
@@ -65,7 +68,7 @@
 
     .Icon {
       font-size: 30px;
-      color: $color-white;
+      color: variables.$color-white;
       cursor: pointer;
       transition: 0.6s ease;
     }
