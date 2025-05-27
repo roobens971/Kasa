@@ -40,11 +40,13 @@ function Slideshow({ pictures }) {
           />
         </div>
       )}
-      <div className="slidesNumbers">
+      {finalSlides > 1 && (
+          <div className="slidesNumbers">
         <span className="number">
           {activeSlide + 1}/{finalSlides}
         </span>
       </div>
+      )}
       <div className="slideshow">
         <img
           className="imgSlides"
