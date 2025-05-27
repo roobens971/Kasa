@@ -10,7 +10,7 @@ function HostInfos({ title, location, name, picture, rating, tags }) {
         </div>
 
         <div className="host_info">
-          <h3>{name}</h3>
+          <p className="host-name">{name}</p>
           <img className="imgHost" src={picture} alt={name} />
         </div>
       </div>

@@ -5,7 +5,7 @@ function Card({ id, title, img }) {
       <Link to={`/logement/${id}`}>
         <img className="CardPictures" src={img} alt={title} />
       </Link>
-      <h3 className="textTitle">{title}</h3>
+      <p className="textTitle">{title}</p>
     </div>
   );
 }

@@ -9,11 +9,11 @@ const Collapse = ({ title, children }) => {
 
   return (
     <div className="collapse-container">
-      <div className="titre-accordion" onClick={toggleCollapse}>
-        <h3>{title}</h3>
+      <button className="titre-accordion" onClick={toggleCollapse} aria-expanded={isOpen} aria-controls={`collapse-panel-${title}`}>
+        <span>{title}</span>
         <FontAwesomeIcon icon={isOpen ? faChevronDown: faChevronUp} />
-      </div>
-      {isOpen && <div className="description">{children}</div>}
+      </button>
+      {isOpen && <div id={`collapse-panel-${title}`} className="description">{children}</div>}
     </div>
   );
 };
