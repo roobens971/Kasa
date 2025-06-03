@@ -75,7 +75,7 @@
   }
 }
 
-@include mixins.tablette {
+@include mixins.mobile {
 .infos {
   grid-template-areas:
     "title title" 

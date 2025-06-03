@@ -45,7 +45,7 @@
 }
 }
 
-@include mixins.tablette {
+@include mixins.mobile {
   .collapse-container {
     .titre-accordion {
       font-size: 13px;

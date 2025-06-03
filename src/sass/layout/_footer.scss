@@ -22,7 +22,7 @@ footer {
   }
 }
 
-@include mixins.tablette {
+@include mixins.mobile {
   footer {
     width: 100vw;
     height: 209px;
