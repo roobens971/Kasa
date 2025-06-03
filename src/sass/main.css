@@ -105,23 +105,15 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  .Banner_container {
-    width: 100%;
-    padding: 20px 0px;
-  }
   .Banner_container .banner_img {
     height: 111px;
     border-radius: 10px;
     width: 100%;
   }
   .Banner_container .banner_text {
-    display: flex;
     justify-content: flex-start;
-    align-items: center;
     padding-left: 16px;
     text-align: left;
-    width: 100%;
-    height: 100%;
   }
   .Banner_container .banner_text h1 {
     font-size: 20px;
@@ -162,13 +154,11 @@ a {
     padding: 0px;
   }
   .DisplayCard {
-    display: grid;
     grid-template-columns: 1fr;
     margin-top: -20px;
     padding: 20px 0px;
   }
   .DisplayCard .CardPictures {
-    width: 100%;
     height: 255px;
   }
   .DisplayCard .textTitle {
@@ -198,8 +188,6 @@ footer p {
 
 @media screen and (max-width: 768px) {
   footer {
-    width: 100vw;
-    height: 209px;
     margin-top: 0px;
   }
   footer img {
@@ -233,7 +221,6 @@ footer p {
     gap: 50px;
   }
   .errorFlex .oupsText {
-    color: rgb(255, 96, 96);
     font-size: 18px;
     text-align: center;
   }
@@ -294,26 +281,15 @@ footer p {
 
 @media screen and (max-width: 768px) {
   .slides {
-    position: relative;
     margin: 0;
     padding: 20px 0px;
   }
   .slides .ArrowIcon {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
-    display: flex;
-    justify-content: space-between;
     padding: 0 10px;
     z-index: 2;
   }
   .slides .Icon {
     font-size: 30px;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    transition: 0.6s ease;
   }
   .imgSlides {
     height: 255px;
@@ -410,13 +386,6 @@ footer p {
     font-size: 10px;
     border-radius: 5px;
   }
-  .infos .host {
-    grid-area: host;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 10px;
-  }
   .infos .host .host-name {
     font-size: 12px;
   }
@@ -425,8 +394,6 @@ footer p {
     height: 32px;
   }
   .infos .rating {
-    grid-area: rating;
-    display: flex;
     justify-content: flex-start;
   }
 }
@@ -481,7 +448,6 @@ footer p {
     padding: 0px;
   }
   .logement-collapse {
-    display: flex;
     flex-direction: column;
     width: 100%;
     margin: 0;
