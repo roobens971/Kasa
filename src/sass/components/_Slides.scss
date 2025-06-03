@@ -51,9 +51,11 @@
   object-fit: cover;
 }
 
-@include mixins.mobile {
+@include mixins.tablette {
   .slides {
     position: relative;
+    margin: 0;
+        padding: 20px 0px;
     .ArrowIcon {
       position: absolute;
       top: 50%;
@@ -74,16 +76,15 @@
     }
   }
   .imgSlides {
-    height: 290px;
+    height: 255px;
     margin-top: 0;
 
-    width: 350px;
+    width: 100%;
     border-radius: 10px;
   }
 
   .slideshow {
-    width: 113%;
-    margin-left: -20px;
+    width: 100%;
   }
 
   .slidesNumbers {

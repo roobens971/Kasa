@@ -45,7 +45,7 @@
 }
 }
 
-@include mixins.mobile {
+@include mixins.tablette {
   .collapse-container {
     .titre-accordion {
       font-size: 13px;
@@ -54,9 +54,8 @@
   }
 
   .collapse-container {
-    margin-left: -70px;
-    width: 140%;
-    margin-bottom: -5px;
+    width: 100%;
+    padding: 0px;
   }
 
   .logement-collapse {
@@ -65,9 +64,7 @@
     width: 100%;
     margin: 0;
     margin-top: 20px;
+    gap: 0px;
   }
 
-  .container-accordeon {
-    margin-top: -30px;
-  }
 }

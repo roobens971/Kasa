@@ -25,8 +25,9 @@
 }
 
 
-@include mixins.mobile {
+@include mixins.tablette {
   .errorFlex {
+    gap: 50px;
   .oupsText {
     color: variables.$color-light-pink;
     font-size: 18px;

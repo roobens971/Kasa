@@ -3,3 +3,9 @@
         @content;
     }
 }
+
+@mixin tablette  {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
