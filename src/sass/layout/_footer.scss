@@ -9,7 +9,7 @@ footer {
   align-items: center;
   padding: 20px 0px;
   gap: 20px;
-  margin-top: 77px;
+  margin-top: 87px;
    height: 209px;
 
   img {
@@ -24,7 +24,7 @@ footer {
 
 @include mixins.mobile {
   footer {
-    margin-top: 0px;
+    margin-top: 20px;
      img {
     margin-top: 50px;
   }

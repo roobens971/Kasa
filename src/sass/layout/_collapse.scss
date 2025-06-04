@@ -1,6 +1,9 @@
 @use "../abstracts/variables";
 @use "../abstracts/mixins";
 
+.container-accordeon {
+  margin-top: 60px;
+}
 .collapse-container {
   padding: 0px 100px;
   width: 100%;
@@ -46,6 +49,10 @@
 }
 
 @include mixins.mobile {
+
+.container-accordeon {
+  margin-top: 0px;
+}
   .collapse-container {
     .titre-accordion {
       font-size: 13px;
