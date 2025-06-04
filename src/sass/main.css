@@ -8,10 +8,6 @@ body {
   margin: 0px;
 }
 
-* {
-  outline: 1px solid red;
-}
-
 .img_logo {
   width: 210px;
   margin-left: 25px;

@@ -6,12 +6,11 @@ function MainContainer() {
   return (
     <>
       <div className="main-container">
-      <Header />
-      <Outlet />
-    </div>
-    <Footer />
+        <Header />
+        <Outlet />
+      </div>
+      <Footer />
     </>
-  
   );
 }
 
