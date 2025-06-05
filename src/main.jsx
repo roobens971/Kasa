@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     element: <MainContainer />,
     children: [
       {
-        index: true, // équivalent à path: ""
+        index: true,
         element: <Accueil />
       },
       {
