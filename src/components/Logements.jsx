@@ -1,4 +1,4 @@
-import data from "../data.js";
+import data from "../data-logements.json";
 import Card from "./Card.jsx";
 function Logements() {
   return (

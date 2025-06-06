@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import Slideshow from "../components/Slideshow.jsx";
-import data from "../data.js";
+import data from "../data-logements.json";
 import ErrorPage from "../pages/ErrorPage.jsx";
 import HostInfos from "../components/HostInfos.jsx";
 import Collapse from "../components/Collapse.jsx";

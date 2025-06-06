@@ -1,4 +1,4 @@
-const logements = [
+ [
   {
     "id": "c67ab8a7",
     "title": "Appartement cosy",
@@ -616,6 +616,4 @@ const logements = [
       "Rivoli"
     ]
   }
-];
-
-export default logements;
+]
