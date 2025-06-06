@@ -57,11 +57,12 @@ a {
     height: 46px;
   }
   .img_logo {
-    width: 145px;
+    width: 95px;
     margin-left: 0px;
   }
   nav a {
     font-size: 12px;
+    padding: 0px 20px;
   }
   ul {
     text-transform: uppercase;
@@ -158,9 +159,9 @@ a {
     height: 255px;
   }
   .DisplayCard .textTitle {
-    width: 295px;
     left: 0px;
     line-height: 143%;
+    font-size: 14px;
   }
 }
 footer {
@@ -183,9 +184,6 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
-  footer {
-    margin-top: 20px;
-  }
   footer img {
     margin-top: 50px;
   }
@@ -395,10 +393,10 @@ footer p {
 }
 .container-accordeon {
   margin-top: 60px;
+  padding: 0px 20px;
 }
 
 .collapse-container {
-  padding: 0px 100px;
   width: 100%;
   margin: 20px 0px;
   overflow: hidden;
@@ -430,9 +428,9 @@ footer p {
 
 .logement-collapse {
   display: flex;
-  margin: 0px -40px;
+  padding: 0px 43px;
   justify-content: space-between;
-  gap: 40px;
+  gap: 75px;
 }
 .logement-collapse .text-infos {
   min-height: 175px;
@@ -454,8 +452,8 @@ footer p {
     flex-direction: column;
     width: 100%;
     margin: 0;
-    margin-top: 20px;
     gap: 0px;
+    padding: 0px;
   }
 }
 .main-container {
