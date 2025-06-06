@@ -181,6 +181,7 @@ footer img {
 }
 footer p {
   color: rgb(255, 255, 255);
+  font-size: 14px;
 }
 
 @media screen and (max-width: 768px) {
@@ -361,7 +362,7 @@ footer p {
   display: flex;
   justify-content: flex-end;
   font-size: 18px;
-  gap: 5px;
+  gap: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -389,6 +390,8 @@ footer p {
   }
   .infos .rating {
     justify-content: flex-start;
+    gap: 5px;
+    font-size: 15px;
   }
 }
 .container-accordeon {

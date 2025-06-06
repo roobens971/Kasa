@@ -71,7 +71,7 @@
     display: flex;
     justify-content: flex-end;
     font-size: 18px;
-    gap: 5px;
+    gap: 10px;
   }
 }
 
@@ -114,6 +114,8 @@
 
   .rating {
     justify-content: flex-start;
+    gap: 5px;
+    font-size: 15px;
   }
 }
 }

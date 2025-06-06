@@ -19,12 +19,12 @@ footer {
 
   p {
     color: variables.$color-white;
+    font-size: 14px;
   }
 }
 
 @include mixins.mobile {
   footer {
-    // margin-top: 20px;
      img {
     margin-top: 50px;
   }
